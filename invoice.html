@@ -27,16 +27,54 @@
              .justify-center {
              text-align: center;
              }
-            
             table {
                position: relative;
-               top: 405px;
+               top: 350px;
                left: -4px;
                border-collapse: collapse;
                width: 90.5%;
             }
             th,td {
                padding: 11.9px;
+            }
+            .details{
+               position: relative;
+               top: 244px;
+               left: 528px;
+               
+            }
+            .details p{
+               margin: .5px;
+            
+
+            }
+            .price{
+               position: relative;
+               top: 376px;
+               right:49px;    
+            }
+            .price p{
+               margin: 4px;
+               text-align: right;
+            }
+            .fullAmount{
+               position: relative;
+               top: 400px;
+               right:49px;    
+            }
+            .fullAmount p{
+               margin: 4px;
+               text-align: right;
+            }
+            .to{
+               position: relative;
+               top: 330px;
+               left: 52px;    
+            }
+            .to p{
+               margin: 4px;
+               text-align: right;
+            }
 
              @media only screen and (max-width: 600px) {
              .invoice-box table tr.top table td {
@@ -54,46 +92,59 @@
        </head>
        <body>
           <div class="invoice-box">
+           <div class="details">
+            <p style="text-align: right: ;">invoice no</p>
+            <p style="text-align: right: ;">date</p>
+         </div>
              <table align="center" >
                 <tr>
                    <td width=50%>Description</td>
                    <td width=48px >price</td>
                    <td width=45px style="text-align:center ;">qty</td>
-                   <td width=48px>total</td>
+                   <td width=48px style="text-align:right ;">total</td>
                 </tr>
                 <tr>
                   <td width=50% >Description</td>
                   <td width=48px>price</td>
                   <td width=45px style="text-align:center ;">qty</td>
-                  <td width=48px>total</td>
+                  <td width=48px style="text-align:right ;">total</td>
                </tr>
                <tr>
                   <td width=50%>Description</td>
                   <td width=48px>price</td>
                   <td width=45px style="text-align:center ;">qty</td>
-                  <td width=48px>total</td>
+                  <td width=48px style="text-align:right ;">total</td>
                </tr>
                <tr>
                   <td width=50%>Description</td>
                   <td width=48px>price</td>
                   <td width=45px style="text-align:center ;">qty</td>
-                  <td width=48px>total</td>
+                  <td width=48px style="text-align:right ;">total</td>
                </tr>
                <tr>
                   <td width=50%>Description</td>
                   <td width=48px>price</td>
                   <td width=45px style="text-align:center ;">qty</td>
-                  <td width=48px>total</td>
+                  <td width=48px style="text-align:right ;">total</td>
                </tr>
                <tr>
                   <td width=50%>Description</td>
                   <td width=48px>price</td>
                   <td width=45px style="text-align:center ;">qty</td>
-                  <td width=48px>total</td>
+                  <td width=48px style="text-align:right ;">total</td>
                </tr>
                
              </table>
-             <br />
+             <div class="price">
+               <p style="text-align: right ;">subtatal</p>
+               <p style="text-align: right ;">discount</p>
+            </div>
+            <div class="fullAmount">
+               <p style="text-align: right ;">total</p>
+            </div>
+            <div class="to">
+               <p style="text-align: left ;">client</p>
+            </div>
              
           </div>
        </body>
