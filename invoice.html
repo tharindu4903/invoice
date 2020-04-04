@@ -4,32 +4,40 @@
           <meta charset="utf-8">
           <title>D'Front Creations</title>
           <style>
-              
-             .invoice-box {
-             background-image: url("https://github.com/tharindu4903/invoice/blob/master/invoice%20temp.jpg?raw=true");
-             background-position: center;
-             background-size: cover;
+             .frame{           
              height:1100px;
-             width: 750px;
-             max-width: 800px;
+             width: 750px;           
+             max-width: 750px;
              margin: auto;
              padding: 30px;
-             border: 1px solid #eee;
+             background-image: url("https://github.com/tharindu4903/invoice/blob/master/invoice%20temp.jpg?raw=true");
+             background-repeat: no-repeat;
+             background-position: center;
+             background-size: cover;
+           
+             }
+              
+             .invoice-box {
+             position: relative;
+             top: -32px;
+             left: -30px;
+             width: 750px;
+             height: 1100px;
+             max-width: 750px;
+             padding: 30px;
              box-shadow: 0 0 10px rgba(0, 0, 0, .15);
              font-size: 16px;
              line-height: 24px;
              font-family: 'Helvetica Neue', 'Helvetica';
              color: #555;
              }
-             .margin-top {
-             margin-top: 50px;
-             }
+            
              .justify-center {
              text-align: center;
              }
             table {
                position: relative;
-               top: 350px;
+               top: 360px;
                left: -4px;
                border-collapse: collapse;
                width: 90.5%;
@@ -50,7 +58,7 @@
             }
             .price{
                position: relative;
-               top: 376px;
+               top: 382px;
                right:49px;    
             }
             .price p{
@@ -59,7 +67,7 @@
             }
             .fullAmount{
                position: relative;
-               top: 400px;
+               top: 407px;
                right:49px;    
             }
             .fullAmount p{
@@ -79,18 +87,19 @@
              @media only screen and (max-width: 600px) {
              .invoice-box table tr.top table td {
              width: 100%;
-             display: block;
+             
              text-align: center;
              }
              .invoice-box table tr.information table td {
              width: 100%;
-             display: block;
+            
              text-align: center;
              }
              }
           </style>
        </head>
        <body>
+          <div class="frame">
           <div class="invoice-box">
            <div class="details">
             <p style="text-align: right: ;">invoice no</p>
@@ -147,5 +156,6 @@
             </div>
              
           </div>
+         </div>
        </body>
     </html>
