@@ -6,7 +6,11 @@
           <style>
               
              .invoice-box {
-             background-image: url("https://github.com/tharindu4903/invoice/blob/master/ayonion%20studios%20logo%20reveal.jpg?raw=true");
+             background-image: url("https://github.com/tharindu4903/invoice/blob/master/invoice%20temp.jpg?raw=true");
+             background-position: center;
+             background-size: cover;
+             height:1100px;
+             width: 750px;
              max-width: 800px;
              margin: auto;
              padding: 30px;
@@ -23,47 +27,16 @@
              .justify-center {
              text-align: center;
              }
-             .invoice-box table {
-             width: 100%;
-             line-height: inherit;
-             text-align: left;
-             }
-             .invoice-box table td {
-             padding: 5px;
-             vertical-align: top;
-             }
-             .invoice-box table tr td:nth-child(2) {
-             text-align: right;
-             }
-             .invoice-box table tr.top table td {
-             padding-bottom: 20px;
-             }
-             .invoice-box table tr.top table td.title {
-             font-size: 45px;
-             line-height: 45px;
-             color: #333;
-             }
-             .invoice-box table tr.information table td {
-             padding-bottom: 40px;
-             }
-             .invoice-box table tr.heading td {
-             background: #eee;
-             border-bottom: 1px solid #ddd;
-             font-weight: bold;
-             }
-             .invoice-box table tr.details td {
-             padding-bottom: 20px;
-             }
-             .invoice-box table tr.item td {
-             border-bottom: 1px solid #eee;
-             }
-             .invoice-box table tr.item.last td {
-             border-bottom: none;
-             }
-             .invoice-box table tr.total td:nth-child(2) {
-             border-top: 2px solid #eee;
-             font-weight: bold;
-             }
+             table, td, th {
+             border: 1px solid black;
+            }
+            table {
+            border-collapse: collapse;
+            width: 100%;
+            }
+            th {
+            height: 50px;
+
              @media only screen and (max-width: 600px) {
              .invoice-box table tr.top table td {
              width: 100%;
@@ -80,49 +53,17 @@
        </head>
        <body>
           <div class="invoice-box">
-             <table cellpadding="0" cellspacing="0">
-                <tr class="top">
-                   <td colspan="2">
-                      <table>
-                         <tr>
-                            <td class="title"><img  src="https://scontent.fcmb4-1.fna.fbcdn.net/v/t1.0-9/90397051_120232559581965_1926860502378479616_o.jpg?_nc_cat=100&_nc_sid=dd9801&_nc_ohc=xhqNuAUAC4IAX-jotHR&_nc_ht=scontent.fcmb4-1.fna&oh=863a39910c42e7f3442b90f308843020&oe=5EAB3E6F"
-                               style="width:100%; max-width:200px;"></td>
-                            <td>
-                               Date: ${`${today.getDate()}. ${today.getMonth() + 1}. ${today.getFullYear()}.`}
-                            </td>
-                         </tr>
-                      </table>
-                   </td>
-                </tr>
-                <tr class="information">
-                   <td colspan="2">
-                      <table>
-                         <tr>
-                            <td>
-                               Customer name: ${name}
-                            </td>
-                            <td>
-                               Receipt number: ${receiptId}
-                            </td>
-                         </tr>
-                      </table>
-                   </td>
-                </tr>
-                <tr class="heading">
-                   <td>Bought items:</td>
-                   <td>Price</td>
-                </tr>
+             <table >
                 <tr class="item">
-                   <td>First item:</td>
-                   <td>${price1}$</td>
+                   <td>Description</td>
+                   <td>price</td>
+                   <td>qty</td>
+                   <td>total</td>
                 </tr>
-                <tr class="item">
-                   <td>Second item:</td>
-                   <td>${price2}$</td>
-                </tr>
+               
              </table>
              <br />
-             <h1 class="justify-center">Total price: ${parseInt(price1) + parseInt(price2)}$</h1>
+             
           </div>
        </body>
     </html>
