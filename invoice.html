@@ -5,28 +5,29 @@
    <meta charset="utf-8">
    <title>D'Front Creations</title>
    <style>
+ 
       .frame {
-         height: 1100px;
-         width: 750px;
-         max-width: 750px;
+         height: 700px;
+         width: 500px;
+         max-width: 500px;
          margin: auto;
          
-         background-image: url("https://github.com/tharindu4903/invoice/blob/master/invoice%20temp.jpg?raw=true");
+         background-image: url("./invoice temp-min.jpg");
          background-repeat: no-repeat;
          background-position: center;
-         background-size: cover;
+         background-size: 520px 750px;
 
       }
 
       .invoice-box {
          position: relative;
         
-         width: 750px;
-         height: 1100px;
-         max-width: 750px;
+         width: 500px;
+         height: 700px;
+         max-width: 500px;
         
          box-shadow: 0 0 10px rgba(0, 0, 0, .15);
-         font-size: 16px;
+         font-size: 11px;
          line-height: 24px;
          font-family: 'Helvetica Neue', 'Helvetica';
          color: #555;
@@ -38,45 +39,46 @@
 
       table {
          position: relative;
-         top: 360px;
+         top: 223px;
          left: -4px;
          border-collapse: collapse;
-         width: 87%;
+         width: 85%;
+         
       }
 
       th,
       td {
-         padding: 11.9px;
+         padding: 4px;
       }
 
       .details {
          position: relative;
-         top: 258px;
-         left: 520px;
+         top: 148px;
+         left: 348px;
 
       }
 
       .details p {
-         margin: .2px;
-
+         
+         height: 4.5px;
 
       }
 
       .price {
          position: relative;
-         top: 369px;
-         right: 60px;
+         top: 129px;
+         right: 45px;
       }
 
       .price p {
-         margin: 4px;
+         height: 7px;
          text-align: right;
       }
 
       .fullAmount {
          position: relative;
-         top: 390px;
-         right: 60px;
+         top: 145px;
+         right: 45px;
       }
 
       .fullAmount p {
@@ -86,8 +88,8 @@
 
       .to {
          position: relative;
-         top: 315px;
-         left: 70px;
+         top: 85px;
+         left: 43px;
       }
 
       .to p {
@@ -100,28 +102,17 @@
          height: 280px;
       }
 
-      @media only screen and (max-width: 600px) {
-         .invoice-box table tr.top table td {
-            width: 100%;
-
-            text-align: center;
-         }
-
-         .invoice-box table tr.information table td {
-            width: 100%;
-
-            text-align: center;
-         }
-      }
+  
    </style>
 </head>
 
 <body>
+   <div class="resize">
    <div class="frame">
       <div class="invoice-box">
          <div class="details">
-            <p style="text-align: right: ;">invoice no</p>
-            <p style="text-align: right: ;">date</p>
+            <p >invoice no</p>
+            <p >date</p>
          </div>
          <div class="tablebox">
             <table align="center">
@@ -177,6 +168,7 @@
 
       </div>
    </div>
+</div>
 </body>
 
 </html>
